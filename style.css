@@ -1,0 +1,156 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: red; */
+  }
+
+  body{
+    text-align: justify;
+  }
+
+  h2{
+    text-align: center;
+    padding: 20px;
+  }
+
+  main{
+    padding: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+  
+  .logo img {
+    height: 70px;
+    width: 70px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+.img-home img{
+  width: 800px;
+  height: 400px;
+  /* display: flex; */
+}
+
+.img-home{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-nav{
+  background-color: rgb(231, 231, 231);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-nav:hover{
+  background-color: rgb(179, 177, 177);
+}
+
+.btn-nav:visited{
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */
+  grid-template-rows: 1fr 1fr; /* Crea dos filas de igual tamaño */
+  gap: 10px; /* Espacio entre las secciones */
+  
+ }
+ 
+ .section {
+  border: 1px solid rgb(185, 185, 185); /* Borde alrededor de cada sección */
+  border-radius: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: justify;
+  margin: 5px;
+ }
+
+ .section:hover {
+  box-shadow: 1px 1px 10px black;
+ }
+
+ .section h3{
+  text-align: center;
+}
+
+.section img {
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+ }
+
+.contacto{
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background: #111;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  /* position: absolute; */
+  position: relative;
+}
+.footer-content,.footer-bottom {
+/* width: 100%;   */
+margin: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  /* background-color: red; */
+  padding-left: 150px;
+  overflow: auto;
+  position: relative;
+}
+
+.footer-content h3 {
+  padding-top: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer-content ul {
+  padding: 0;
+  list-style: none;
+  /* line-height: 24px; */
+}
+
+.footer-img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  padding: 25px;
+  padding-right: 100px;
+  padding-top: 35px;
+  top: 0;
+  right: 0;
+} 
+
+.integrantes{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
