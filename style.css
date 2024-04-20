@@ -1,3 +1,6 @@
+html{
+  background-color: #e4d8d8;
+}
 
 nav {
     display: flex;
@@ -5,10 +8,16 @@ nav {
     align-items: center;
     padding: 20px;
     /* background-color: red; */
+    background-color: #dbb8b4;
+  }
+
+  nav h1{
+    color: #522845;
   }
 
   body{
     text-align: justify;
+    font-family: 'Kanit', sans-serif;
   }
 
   h2{
@@ -18,8 +27,8 @@ nav {
 
   main{
     padding: 50px;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 200px;
+    padding-left: 200px;
   }
   
   .logo img {
@@ -39,8 +48,8 @@ nav {
   }
 
 .img-home img{
-  width: 800px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   /* display: flex; */
 }
 
@@ -50,7 +59,7 @@ nav {
 }
 
 .btn-nav{
-  background-color: rgb(231, 231, 231);
+  background-color: #91947f;
   border-radius: 5px;
   padding: 5px;
 }
@@ -105,10 +114,43 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
 }
 
+.info-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.info-p img {
+  width: 50px;
+  height: 50px;
+}
+
+.info-p p {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.img-info{
+  padding-left: 50px;
+}
+.img-info{
+height: fit-content;
+}
+
+
+.rotate-on-hover {
+  transition: transform .7s ease-in-out;
+}
+
+.rotate-on-hover:hover {
+  transform: rotate(360deg);
+}
+
 /* footer */
 footer {
-  background: #111;
-  color: #fff;
+  background: #dbb8b4;
+  color: #522845;
   bottom: 0;
   width: 100%;
   left: 0;
@@ -118,7 +160,7 @@ footer {
 .footer-content,.footer-bottom {
 /* width: 100%;   */
 margin: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   position: relative;
   /* background-color: red; */
   padding-left: 150px;
@@ -128,8 +170,8 @@ margin: 10px;
 
 .footer-content h3 {
   padding-top: 10px;
-  color: #fff;
-  margin-bottom: 10px;
+  color: #522845;
+  /* margin-bottom: 10px; */
 }
 .footer-content ul {
   padding: 0;
@@ -138,10 +180,10 @@ margin: 10px;
 }
 
 .footer-img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   position: absolute;
-  padding: 25px;
+  /* padding: 25px; */
   padding-right: 100px;
   padding-top: 35px;
   top: 0;
@@ -154,3 +196,40 @@ margin: 10px;
   flex-wrap: wrap;
 }
 
+input[type=text], input[type=email], input[type=select]  {
+  background-color: white;
+  border: 2px solid #eee;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=select]:focus  {
+  border: 2px solid #555;
+}
+
+
+textarea {
+  background-color: white;
+  border: 2px solid #eee;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+  border: 2px solid #555;
+}
+
+input[type=submit] {
+  background-color: #91947f;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+input[type=submit]:hover {
+  border: 1px solid #6e6f62;
+}

@@ -1,6 +1,8 @@
 <?php
+session_start();
+
 $servername = "localhost";
-$database = "prueba";
+$database = "Eq1Opinion";
 $username = "root";
 $password = "";
 
@@ -15,13 +17,20 @@ if (!$conn) {
 // Insertar en la tabla correspondiente
 $sql = "INSERT INTO formulario (nombre, correo, experiencia, comentarios) VALUES ('".$_POST['nombre']."', '".$_POST['correo']."', '".$_POST['experiencia']."', '".$_POST['comentarios']."')";
 
-// Si la conexión es exitosa, ejecutar la consulta
+ // Si la conexión es exitosa, ejecutar la consulta
 if ($conn->query($sql) === TRUE) {
- echo "Datos insertados exitosamente";
-} else {
- echo "Error: " . $sql . "<br>" . $conn->error;
+  // Almacenar el mensaje en una variable de sesión
+  $_SESSION['message'] = "Datos enviados exitosamente";
+   header('Location: index.php#contacto');
+  exit;
+ } else {
+ $_SESSION['message'] = "Error: " . $sql . "<br>" . $conn->error;
 }
 
 // Cerrar la conexión
 $conn->close();
+
+// Redirigir al usuario a la misma página
+//  header('Location: index.php#contacto');
+//  exit;
 ?>
